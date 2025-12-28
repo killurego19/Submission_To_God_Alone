@@ -11,7 +11,7 @@
 
 When Tamil text is copied, converted, or processed through various systems, it often develops spacing problems that break the character combinations, making the text difficult to read or completely meaningless. This tool automatically detects and fixes these issues.
 
-**Developed by:** MASJID INDIA, CHENNAI
+**Developed by:** SOCIAL MEDIA GROUP, MASJID INDIA, CHENNAI
 
 ---
 
