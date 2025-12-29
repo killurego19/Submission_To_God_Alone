@@ -11,7 +11,7 @@
 
 When Tamil text is copied, converted, or processed through various systems, it often develops spacing problems that break the character combinations, making the text difficult to read or completely meaningless. This tool automatically detects and fixes these issues.
 
-**Developed by:** MASJID INDIA, CHENNAI
+**Developed by:** Social Media Team, Masjid India, Chennai
 
 ---
 
@@ -32,12 +32,14 @@ When Tamil text is copied, converted, or processed through various systems, it o
 
 ## Features
 
-✅ **Automatic Tamil Column Detection** - Automatically finds columns containing Tamil text  
-✅ **Preview Before Fix** - Scan and preview issues before making changes  
-✅ **Before/After Comparison** - See examples of what will be changed  
+✅ **Surah & Verse Location Display** - Shows exact Quran location (Surah X, Verse Y) for each error  
+✅ **Automatic Column Detection** - Auto-detects Surah, Verse, and Tamil columns  
+✅ **Preview Before Fix** - Scan and preview all issues before making changes  
+✅ **Before/After Comparison** - See exactly what will be changed for each error  
+✅ **Export Error Report** - Save all errors to a separate Excel file for review  
 ✅ **Batch Processing** - Process thousands of rows in seconds  
 ✅ **Non-Destructive** - Creates a new corrected file, original remains unchanged  
-✅ **Detailed Logging** - See exactly what's happening at each step  
+✅ **Color-Coded Output** - Easy to read error report with syntax highlighting  
 ✅ **User-Friendly GUI** - No command line knowledge required  
 ✅ **Progress Tracking** - Visual progress bar during processing  
 
@@ -102,11 +104,11 @@ Save the `tamil_quran_fixer_v2.py` file to a folder on your computer, for exampl
 
 ### 5-Step Quick Process:
 
-1. **Double-click** `tamil_quran_fixer_v2.py` to launch the application
-2. Click **"Browse..."** and select your Excel file
-3. Click **"Preview Issues"** to see what problems exist
-4. Click **"Process & Fix Tamil Text"** to fix the issues
-5. Find your corrected file in the same folder as the original (with `_corrected` suffix)
+1. **Double-click** `tamil_quran_fixer_v3.py` to launch the application
+2. Click **"Browse..."** and select your Excel file (columns will be auto-detected)
+3. Verify the **Surah**, **Verse**, and **Tamil** columns are correctly selected
+4. Click **"🔍 Find Errors"** to see all issues with their Surah:Verse locations
+5. Click **"✓ Fix All Errors"** to fix the issues and save the corrected file
 
 ---
 
@@ -451,7 +453,8 @@ The application processes characters in the Tamil Unicode block (U+0B80 to U+0BF
 
 | File | Description |
 |------|-------------|
-| `tamil_quran_fixer_v2.py` | Main GUI application |
+| `tamil_quran_fixer_v3.py` | Main GUI application (Latest - with Surah/Verse location) |
+| `tamil_quran_fixer_v2.py` | Previous GUI version |
 | `tamil_fixer_cli.py` | Command-line version |
 | `requirements.txt` | Python dependencies |
 | `README.md` | This documentation |
@@ -482,6 +485,7 @@ For issues or feature requests, please contact:
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 3.0 | 2024 | Added Surah/Verse location display, column auto-detection dropdowns, error export feature, color-coded output |
 | 2.0 | 2024 | Improved error handling, detailed logging, before/after preview |
 | 1.0 | 2024 | Initial release |
 
